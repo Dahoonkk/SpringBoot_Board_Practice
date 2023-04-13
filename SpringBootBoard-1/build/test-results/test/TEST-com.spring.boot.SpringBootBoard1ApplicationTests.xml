@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.spring.boot.SpringBootBoard1ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-12T04:52:14" hostname="DESKTOP-OEQB1EN" time="0.73">
+  <properties/>
+  <testcase name="testJpa()" classname="com.spring.boot.SpringBootBoard1ApplicationTests" time="0.73"/>
+  <system-out><![CDATA[13:52:09.228 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [SpringBootBoard1ApplicationTests]: using SpringBootContextLoader
+13:52:09.240 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.spring.boot.SpringBootBoard1ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:52:09.241 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.spring.boot.SpringBootBoard1ApplicationTests]: SpringBootBoard1ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:52:09.270 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [SpringBootBoard1ApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+13:52:09.364 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [C:\Users\DH.KOO\practice\SpringBootBoard-1\build\classes\java\main\com\spring\boot\SpringBootBoard1Application.class]
+13:52:09.366 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.spring.boot.SpringBootBoard1Application for test class com.spring.boot.SpringBootBoard1ApplicationTests
+13:52:09.536 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [SpringBootBoard1ApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+13:52:09.538 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [SpringBootBoard1ApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.5)
+
+2023-04-12T13:52:09.897+09:00  INFO 22408 --- [    Test worker] c.s.b.SpringBootBoard1ApplicationTests   : Starting SpringBootBoard1ApplicationTests using Java 17.0.3 with PID 22408 (started by DH.KOO in C:\Users\DH.KOO\practice\SpringBootBoard-1)
+2023-04-12T13:52:09.899+09:00  INFO 22408 --- [    Test worker] c.s.b.SpringBootBoard1ApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-04-12T13:52:10.614+09:00  INFO 22408 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-12T13:52:10.697+09:00  INFO 22408 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2023-04-12T13:52:11.212+09:00  INFO 22408 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-12T13:52:11.283+09:00  INFO 22408 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-12T13:52:11.697+09:00  INFO 22408 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-12T13:52:11.979+09:00  INFO 22408 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/local user=SA
+2023-04-12T13:52:11.982+09:00  INFO 22408 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-12T13:52:12.011+09:00  INFO 22408 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-12T13:52:13.026+09:00  INFO 22408 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-12T13:52:13.038+09:00  INFO 22408 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-12T13:52:13.226+09:00  WARN 22408 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-12T13:52:14.044+09:00  INFO 22408 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/local'
+2023-04-12T13:52:14.107+09:00  INFO 22408 --- [    Test worker] c.s.b.SpringBootBoard1ApplicationTests   : Started SpringBootBoard1ApplicationTests in 4.502 seconds (process running for 6.044)
+Hibernate: 
+    select
+        count(*) 
+    from
+        question q1_0
+Hibernate: 
+    select
+        q1_0.id,
+        q1_0.content,
+        q1_0.create_date,
+        q1_0.subject 
+    from
+        question q1_0 
+    where
+        q1_0.id=?
+Hibernate: 
+    select
+        q1_0.id,
+        q1_0.content,
+        q1_0.create_date,
+        q1_0.subject 
+    from
+        question q1_0 
+    where
+        q1_0.id=?
+Hibernate: 
+    select
+        a1_0.question_id,
+        a1_0.id,
+        a1_0.content,
+        a1_0.create_date 
+    from
+        answer a1_0 
+    where
+        a1_0.question_id=?
+Hibernate: 
+    delete 
+    from
+        question 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        question q1_0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
